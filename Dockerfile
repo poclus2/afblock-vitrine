@@ -11,9 +11,9 @@ RUN npm ci
 
 # Copy source code
 COPY . .
-
-# Build the application
+RUN ls -laR public || echo "Public dir MISSING from context"
 RUN npm run build
+RUN ls -la dist
 # Production Stage
 FROM nginx:alpine
 
