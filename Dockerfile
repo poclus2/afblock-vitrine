@@ -23,8 +23,8 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy build artifacts from build stage
 COPY --from=build /app/dist /usr/share/nginx/html
-# Explicitly copy public assets to ensure they are present
-COPY public/ /usr/share/nginx/html/
+# Explicitly copy public assets from build stage
+COPY --from=build /app/public /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
