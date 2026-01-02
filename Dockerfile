@@ -14,6 +14,7 @@ COPY . .
 
 # Build the application
 RUN npm run build
+RUN ls -la dist
 
 # Production Stage
 FROM nginx:alpine
@@ -21,10 +22,9 @@ FROM nginx:alpine
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy build artifacts from build stage
 COPY --from=build /app/dist /usr/share/nginx/html
-# Explicitly copy public assets from build stage
-COPY --from=build /app/public /usr/share/nginx/html/
+# Debug: Check if assets are in dist
+# RUN ls -la /app/dist
 
 # Expose port 80
 EXPOSE 80
