@@ -1,0 +1,7 @@
+services:
+  afblock-website:
+    image: ghcr.io/poclus2/afblock-vitrine:latest
+    container_name: afblock_website
+    restart: always
+    ports:
+      - "80:80"
