@@ -66,7 +66,7 @@ jobs:
             docker run -d \
               --name afblock_website \
               --restart always \
-              -p 80:80 \
+              -p 8081:80 \
               ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             
             # Cleanup unused images

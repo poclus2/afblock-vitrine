@@ -4,4 +4,4 @@ services:
     container_name: afblock_website
     restart: always
     ports:
-      - "80:80"
+      - "8081:80"
