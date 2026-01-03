@@ -10,7 +10,7 @@ export default function Governance() {
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <div className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-sm font-medium">
-                                SOC 2 Type II Compliant
+                                Built with security and compliance best practices. Infrastructure powered by regulated partner
                             </div>
                             <div className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-sm font-medium">
                                 GDPR Ready

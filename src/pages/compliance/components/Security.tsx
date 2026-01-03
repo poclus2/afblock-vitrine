@@ -13,7 +13,7 @@ export default function Security() {
                             <p className="text-blue-100 mb-6">All sensitive data is encrypted at rest (AES-256) and in transit (TLS 1.3). We utilize Multi-Party Computation (MPC) for wallet security.</p>
                             <ul className="space-y-3">
                                 <li className="flex items-center text-sm">
-                                    <span className="material-symbols-outlined text-accent text-sm mr-2">check</span> SOC 2 Type II Certified
+                                    <span className="material-symbols-outlined text-accent text-sm mr-2">check</span> Built with security and compliance best practices. Infrastructure powered by regulated partner
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <span className="material-symbols-outlined text-accent text-sm mr-2">check</span> GDPR & CCPA Compliant

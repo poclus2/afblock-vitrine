@@ -27,7 +27,7 @@ export default function FeaturesGrid() {
         },
         {
             title: 'Bank-grade Security',
-            description: 'Multi-signature wallets, SOC2 Type II certification, and fully segregated client funds.',
+            description: 'Multi-signature wallets. Built with security and compliance best practices. Infrastructure powered by regulated partner. Fully segregated client funds.',
             icon: 'security',
         },
     ];
