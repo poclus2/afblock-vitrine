@@ -48,6 +48,8 @@ jobs:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USERNAME }}
           password: ${{ secrets.DO_PASSWORD }}
+          timeout: 60s
+          command_timeout: 30m
           script: |
             # Echo branding
             echo "Deploying Afblock Website..."
