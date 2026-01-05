@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function UseCasesPreview() {
     const cases = [
         {
-            title: 'Cross-border Payments & FX',
+            title: 'African Diaspora exporters & global trade',
             description: 'Settle vendor invoices globally without high banking fees or delays.',
             icon: 'public',
             link: '/use-cases#cross-border',

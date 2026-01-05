@@ -26,7 +26,7 @@ export default function HowItWorks() {
                             <span className="material-symbols-outlined text-3xl">account_balance</span>
                         </div>
                         <h3 className="text-lg font-bold mb-2">Fiat In</h3>
-                        <p className="text-sm text-blue-200 w-48">Collect payments via wire or ACH from customers.</p>
+                        <p className="text-sm text-blue-200 w-48">Collect payments via wire or ACH (EUR, GBP, USD).</p>
                     </div>
 
                     {/* Arrow (Mobile) */}
@@ -50,7 +50,7 @@ export default function HowItWorks() {
                             <span className="material-symbols-outlined text-3xl">token</span>
                         </div>
                         <h3 className="text-lg font-bold mb-2 text-accent">Stablecoins</h3>
-                        <p className="text-sm text-blue-200 w-48">Hold, yield, or transfer on-chain instantly.</p>
+                        <p className="text-sm text-blue-200 w-48">Hold or transfer stablecoins on-chain instantly.</p>
                     </div>
 
                     {/* Arrow (Mobile) */}
