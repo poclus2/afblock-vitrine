@@ -33,7 +33,7 @@ export default function FinancialFlows() {
                                 <div className="absolute inset-0 bg-accent/10"></div>
                                 <span className="material-symbols-outlined text-4xl text-white mb-2 relative z-10">sync_alt</span>
                                 <p className="font-semibold text-white relative z-10">Auto-Conversion</p>
-                                <p className="text-sm text-blue-100 relative z-10">USD → USDC (1:1)</p>
+                                <p className="text-sm text-blue-100 relative z-10">USD → stablecoin (near-parity)</p>
                             </div>
 
                             <div className="hidden md:block flex-shrink-0">
@@ -77,7 +77,7 @@ export default function FinancialFlows() {
                                 <div className="absolute inset-0 bg-accent/10"></div>
                                 <span className="material-symbols-outlined text-4xl text-white mb-2 relative z-10">currency_exchange</span>
                                 <p className="font-semibold text-white relative z-10">FX Liquidation</p>
-                                <p className="text-sm text-blue-100 relative z-10">USDC → EUR/GBP/SGD</p>
+                                <p className="text-sm text-blue-100 relative z-10">USDC → EUR/GBP/USD</p>
                             </div>
 
                             <div className="hidden md:block flex-shrink-0">

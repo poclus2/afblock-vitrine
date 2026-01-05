@@ -8,7 +8,7 @@ export default function Hero() {
                         Platform
                     </span>
                 </div>
-                <h1 className="text-5xl md:text-7xl font-bold text-primary dark:text-white tracking-tight leading-tight mb-8">
+                <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-primary dark:text-white tracking-tight leading-tight mb-8">
                     Stablecoin-first infrastructure,<br className="hidden md:block" />
                     built for{" "}
                     <span className="relative inline-block">

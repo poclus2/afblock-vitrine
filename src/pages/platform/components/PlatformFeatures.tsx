@@ -30,6 +30,9 @@ export default function PlatformFeatures() {
                         <p className="text-lg text-neutral-grey dark:text-text-body-dark mb-8">
                             Most solutions offer simple conversion. Afblock offers a complete financial operating system tailored for high-volume business needs.
                         </p>
+                        <p className="text-lg text-neutral-grey dark:text-text-body-dark mb-8 border-l-4 border-accent pl-4 italic">
+                            For example: automate payroll in USDC/USDT for a distributed team across Europe and Africa.
+                        </p>
                         <div className="flex items-center gap-4">
                             <a href="#" className="text-primary dark:text-accent font-semibold flex items-center hover:underline">
                                 Read our case studies <span className="material-symbols-outlined ml-1">arrow_forward</span>

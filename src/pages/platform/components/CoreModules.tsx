@@ -2,7 +2,7 @@ export default function CoreModules() {
     const modules = [
         {
             title: 'Multi-Currency Accounts',
-            description: 'Segregated IBANs and crypto wallets for over 15+ currencies and 5+ stablecoins.',
+            description: 'Dedicated IBANs (where available) and crypto wallets for over 15+ currencies and 5+ stablecoins.',
             icon: 'account_balance_wallet',
         },
         {
