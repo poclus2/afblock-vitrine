@@ -13,7 +13,7 @@ export default function Security() {
                             <p className="text-blue-100 mb-6">All sensitive data is encrypted at rest (AES-256) and in transit (TLS 1.3). We utilize Multi-Party Computation (MPC) for wallet security.</p>
                             <ul className="space-y-3">
                                 <li className="flex items-center text-sm">
-                                    <span className="material-symbols-outlined text-accent text-sm mr-2">check</span> Built with security and compliance best practices. Infrastructure powered by regulated partner
+                                    <span className="material-symbols-outlined text-accent text-sm mr-2">check</span> Designed in alignment with SOC 2 Type II and ISO 27001 security frameworks.
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <span className="material-symbols-outlined text-accent text-sm mr-2">check</span> GDPR & CCPA Compliant
@@ -26,7 +26,7 @@ export default function Security() {
 
                         <div className="p-10 flex flex-col justify-center bg-white/5">
                             <h3 className="text-2xl font-bold mb-4">Funds Segregation</h3>
-                            <p className="text-blue-100 mb-6">Client funds are always kept strictly segregated from Afblock's corporate operating accounts. 100% of stablecoin reserves are verifiable.</p>
+                            <p className="text-blue-100 mb-6">Client funds are always kept strictly segregated from Afblock's corporate operating accounts. Stablecoin balances are fully backed and auditable through regulated partners.</p>
                             <div className="bg-black/20 p-4 rounded-lg">
                                 <div className="flex justify-between text-xs text-blue-200 mb-2">
                                     <span>Reserve Ratio</span>

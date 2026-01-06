@@ -20,7 +20,7 @@ export default function UseCasesGrid() {
         },
         {
             title: 'Invoice Factoring',
-            description: 'Tokenize invoices for instant liquidity through DeFi pools or private credit lines.',
+            description: 'Enable faster access to liquidity using structured, compliant financing workflows.',
             icon: 'receipt_long',
             link: '#',
         },

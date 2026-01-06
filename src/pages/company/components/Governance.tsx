@@ -10,13 +10,13 @@ export default function Governance() {
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <div className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-sm font-medium">
-                                Built with security and compliance best practices. Infrastructure powered by regulated partner
+                                Designed in alignment with SOC 2 Type II
                             </div>
                             <div className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-sm font-medium">
-                                GDPR Ready
+                                ISO 27001 Security Frameworks
                             </div>
                             <div className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-sm font-medium">
-                                ISO 27001 Certified
+                                GDPR Aligned
                             </div>
                         </div>
                     </div>

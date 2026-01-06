@@ -4,7 +4,7 @@ export default function Newsletter() {
             <div className="max-w-3xl mx-auto px-4 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-white mb-4">Stay ahead of the curve</h2>
                 <p className="text-neutral-grey dark:text-gray-400 mb-8">
-                    Join 10,000+ finance leaders receiving our weekly analysis on B2B payments and blockchain infrastructure.
+                    Join finance leaders receiving our insights on B2B payments and blockchain infrastructure.
                 </p>
                 <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
                     <input

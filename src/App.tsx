@@ -6,6 +6,7 @@ import UseCasesPage from './pages/use-cases/UseCasesPage';
 import CompliancePage from './pages/compliance/CompliancePage';
 import PricingPage from './pages/pricing/PricingPage';
 import BlogPage from './pages/blog/BlogPage';
+import BlogPostPage from './pages/blog/BlogPostPage';
 import CompanyPage from './pages/company/CompanyPage';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="compliance" element={<CompliancePage />} />
         <Route path="pricing" element={<PricingPage />} />
         <Route path="blog" element={<BlogPage />} />
+        <Route path="blog/:id" element={<BlogPostPage />} />
         <Route path="company" element={<CompanyPage />} />
         <Route path="*" element={<div className="p-10 text-center">404 Not Found</div>} />
       </Route>

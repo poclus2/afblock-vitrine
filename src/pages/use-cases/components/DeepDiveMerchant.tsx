@@ -32,7 +32,7 @@ export default function DeepDiveMerchant() {
                                         <span className="material-symbols-outlined text-[16px] text-accent">autorenew</span>
                                     </div>
                                     <div className="flex items-center justify-between gap-4 text-sm font-medium">
-                                        <span>Receive Crypto</span>
+                                        <span>Receive stablecoin</span>
                                         <span className="h-0.5 flex-1 bg-white/30"></span>
                                         <span className="text-accent">Convert to Fiat</span>
                                     </div>

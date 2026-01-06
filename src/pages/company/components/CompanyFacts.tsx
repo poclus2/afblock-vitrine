@@ -7,24 +7,24 @@ export default function CompanyFacts() {
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="p-6 bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm text-center md:text-left">
-                        <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">2023</p>
+                        <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">2024</p>
                         <p className="text-primary dark:text-white font-bold text-lg">Year Founded</p>
                         <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Establishing the new standard</p>
                     </div>
                     <div className="p-6 bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm text-center md:text-left">
                         <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">180+</p>
-                        <p className="text-primary dark:text-white font-bold text-lg">Countries Served</p>
-                        <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Global payout network</p>
+                        <p className="text-primary dark:text-white font-bold text-lg">Global Coverage</p>
+                        <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Payout corridors</p>
                     </div>
                     <div className="p-6 bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm text-center md:text-left">
-                        <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">$2B+</p>
-                        <p className="text-primary dark:text-white font-bold text-lg">Processed Volume</p>
-                        <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Securely handled transactions</p>
+                        <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">Enterprise</p>
+                        <p className="text-primary dark:text-white font-bold text-lg">Infrastructure</p>
+                        <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Built for scale</p>
                     </div>
                     <div className="p-6 bg-white dark:bg-surface-dark rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm text-center md:text-left">
-                        <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">500+</p>
-                        <p className="text-primary dark:text-white font-bold text-lg">Enterprise Clients</p>
-                        <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Trust Afblock daily</p>
+                        <p className="text-4xl md:text-5xl font-extrabold text-accent mb-2">High-Vol</p>
+                        <p className="text-primary dark:text-white font-bold text-lg">Business Focus</p>
+                        <p className="text-neutral-grey dark:text-gray-400 text-sm mt-1">Tailored solutions</p>
                     </div>
                 </div>
             </div>

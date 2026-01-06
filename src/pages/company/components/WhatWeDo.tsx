@@ -16,7 +16,7 @@ export default function WhatWeDo() {
                         </div>
                         <h3 className="text-xl font-bold text-primary dark:text-white mb-3">Treasury Management</h3>
                         <p className="text-neutral-grey dark:text-gray-400 leading-relaxed">
-                            Manage your crypto and fiat treasury flows in one unified dashboard with real-time reporting and analytics.
+                            Orchestrate and monitor crypto stablecoin and fiat treasury flows in one unified dashboard with real-time reporting and analytics.
                         </p>
                     </div>
                     {/* Card 2 */}

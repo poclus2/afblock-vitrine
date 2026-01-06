@@ -10,7 +10,7 @@ export default function Governance() {
                             We maintain a comprehensive audit trail for every action on the platform, ensuring you are always ready for regulatory inquiries or internal audits.
                         </p>
                         <a href="#" className="text-primary dark:text-accent font-semibold flex items-center hover:underline">
-                            Download Compliance Report <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                            Request Compliance Pack <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
                         </a>
                     </div>
 

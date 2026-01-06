@@ -20,7 +20,7 @@ export default function CorePricing() {
                                 <span className="text-4xl font-bold text-primary dark:text-white">$0</span>
                                 <span className="text-neutral-grey dark:text-gray-400 ml-2">/ month</span>
                             </div>
-                            <p className="text-sm text-accent font-medium mb-6">Free for standard accounts</p>
+                            <p className="text-sm text-accent font-medium mb-6">Free for standard accounts. Account maintenance is free. Transaction and third-party network fees may apply.</p>
                             <ul className="space-y-4 text-sm text-neutral-grey dark:text-gray-400">
                                 <li className="flex items-start gap-3">
                                     <span className="material-symbols-outlined text-green-500 text-lg">check_circle</span>
@@ -50,14 +50,13 @@ export default function CorePricing() {
                         <p className="text-sm text-neutral-grey dark:text-gray-400 mb-6 min-h-[40px]">Global payments, crypto on/off-ramps and conversions.</p>
                         <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
                             <div className="flex items-baseline mb-1">
-                                <span className="text-4xl font-bold text-primary dark:text-white">0.5%</span>
-                                <span className="text-neutral-grey dark:text-gray-400 ml-2">starts at</span>
+                                <span className="text-neutral-grey dark:text-gray-400 ml-2">Fees vary depending on volume, corridor, asset type, and liquidity conditions; see details below.</span>
                             </div>
                             <p className="text-sm text-accent font-medium mb-6">Volume discounts available</p>
                             <ul className="space-y-4 text-sm text-neutral-grey dark:text-gray-400">
                                 <li className="flex items-start gap-3">
                                     <span className="material-symbols-outlined text-green-500 text-lg">check_circle</span>
-                                    <span>Fiat to Stablecoin (Mint/Redeem)</span>
+                                    <span>Fiat to Stablecoin</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="material-symbols-outlined text-green-500 text-lg">check_circle</span>
@@ -76,7 +75,7 @@ export default function CorePricing() {
                         <div className="h-12 w-12 bg-blue-50 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 text-primary dark:text-accent">
                             <span className="material-symbols-outlined text-2xl">credit_card</span>
                         </div>
-                        <h3 className="text-xl font-bold text-primary dark:text-white mb-2">Corporate Cards</h3>
+                        <h3 className="text-xl font-bold text-primary dark:text-white mb-2">Corporate Cards (Upcoming)</h3>
                         <p className="text-sm text-neutral-grey dark:text-gray-400 mb-6 min-h-[40px]">Virtual and physical cards for team expenses.</p>
                         <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
                             <div className="flex items-baseline mb-1">

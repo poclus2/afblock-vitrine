@@ -33,7 +33,7 @@ export default function FeeSchedule() {
                                     <td className="p-6 text-sm text-neutral-grey dark:text-gray-400">Free</td>
                                 </tr>
                                 <tr>
-                                    <td className="p-6 text-sm font-medium text-neutral-dark dark:text-gray-200">Crypto Liquidation</td>
+                                    <td className="p-6 text-sm font-medium text-neutral-dark dark:text-gray-200">Fiat Deposit & Auto-Convert (ACH/Wire)</td>
                                     <td className="p-6 text-sm text-neutral-grey dark:text-gray-400">1% spread</td>
                                     <td className="p-6 text-sm text-accent font-medium">Custom Quote</td>
                                 </tr>
@@ -48,7 +48,7 @@ export default function FeeSchedule() {
                     <div className="p-6 bg-gray-50 dark:bg-gray-800/30 border-t border-gray-100 dark:border-gray-700">
                         <p className="text-xs text-neutral-grey dark:text-gray-400">
                             * Enterprise pricing applies to businesses processing &gt;$1M monthly volume.{' '}
-                            <a className="text-primary dark:text-accent underline decoration-1 underline-offset-2" href="#">
+                            <a className="text-primary dark:text-accent underline decoration-1 underline-offset-2" href="/contact">
                                 Contact sales
                             </a>{' '}
                             for volume discounts.

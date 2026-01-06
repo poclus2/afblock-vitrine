@@ -17,7 +17,7 @@ export default function FeaturedPost() {
                                 <span className="px-3 py-1 text-xs font-medium bg-accent/20 text-yellow-700 dark:text-yellow-400 rounded-full border border-accent/20">
                                     Featured
                                 </span>
-                                <span className="text-sm text-neutral-grey dark:text-gray-400">Oct 24, 2023</span>
+                                <span className="text-sm text-neutral-grey dark:text-gray-400">Jan 20, 2025</span>
                             </div>
                             <h2 className="text-3xl font-bold text-primary dark:text-white leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">
                                 Bridging the Gap: How Institutional Defi is Transforming Corporate Treasury

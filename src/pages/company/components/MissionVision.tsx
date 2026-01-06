@@ -22,7 +22,7 @@ export default function MissionVision() {
                         <h2 className="text-primary dark:text-white text-3xl font-bold tracking-tight">Our Vision</h2>
                         <div className="h-1 w-20 bg-accent rounded-full"></div>
                         <p className="text-neutral-grey dark:text-gray-400 text-lg leading-relaxed">
-                            A world where global business payments are instant, transparent, and auditably secure. We envision an ecosystem where crypto and fiat treasuries coexist seamlessly on a single, unified platform.
+                            A world where global business payments are instant, transparent, and auditably secure. We envision an ecosystem where crypto and fiat treasuries coexist seamlessly through a unified orchestration platform.
                         </p>
                     </div>
                 </div>

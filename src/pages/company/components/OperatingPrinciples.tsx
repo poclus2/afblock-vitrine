@@ -50,6 +50,16 @@ export default function OperatingPrinciples() {
                                 We build for our users. Every feature is designed to solve real problems for real financial teams.
                             </p>
                         </div>
+                        {/* Principle 5 */}
+                        <div className="flex flex-col gap-3">
+                            <div className="flex items-center gap-3 mb-1">
+                                <span className="material-symbols-outlined text-accent">check_circle</span>
+                                <h3 className="text-lg font-bold text-primary dark:text-white">Regulatory Alignment</h3>
+                            </div>
+                            <p className="text-neutral-grey dark:text-gray-400 text-sm leading-relaxed pl-9">
+                                We operate in lockstep with global frameworks, ensuring your business stays compliant as regulations evolve.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -9,6 +9,8 @@ export default function Limitations() {
                             <h4 className="text-lg font-bold text-primary dark:text-white mb-3">Supported Jurisdictions</h4>
                             <p className="text-sm text-neutral-grey dark:text-subtext-dark mb-4">
                                 Afblock currently services business entities incorporated in the EU, UK, Switzerland, Singapore, and select US states.
+                                <br /><br />
+                                <span className="italic opacity-80">Jurisdictional availability may evolve based on regulatory approvals.</span>
                             </p>
                             <a href="#" className="text-xs text-primary dark:text-accent font-semibold uppercase tracking-wider">View Full List</a>
                         </div>

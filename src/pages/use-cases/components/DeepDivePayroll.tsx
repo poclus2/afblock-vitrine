@@ -68,7 +68,7 @@ export default function DeepDivePayroll() {
                                     </div>
                                     <div className="flex-1 rounded border border-dashed border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/50 p-3">
                                         <div className="text-xs font-bold text-gray-500 dark:text-gray-400">Origin</div>
-                                        <div className="font-semibold text-neutral-dark dark:text-white">Corporate Bank (USD)</div>
+                                        <div className="font-semibold text-neutral-dark dark:text-white">Corporate Bank (fiat)</div>
                                     </div>
                                 </div>
                                 {/* Connector Down */}
@@ -80,7 +80,7 @@ export default function DeepDivePayroll() {
                                     </div>
                                     <div className="flex-1 rounded bg-primary/5 dark:bg-primary/20 border border-primary/20 dark:border-primary/30 p-3">
                                         <div className="text-xs font-bold text-primary dark:text-blue-300">Afblock Engine</div>
-                                        <div className="font-semibold text-neutral-dark dark:text-white">Auto-Convert to USDC</div>
+                                        <div className="font-semibold text-neutral-dark dark:text-white">Auto-convert to supported stablecoins</div>
                                     </div>
                                 </div>
                                 {/* Connector Down */}
@@ -92,7 +92,7 @@ export default function DeepDivePayroll() {
                                     </div>
                                     <div className="flex-1 rounded border border-dashed border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/50 p-3">
                                         <div className="text-xs font-bold text-gray-500 dark:text-gray-400">Destination</div>
-                                        <div className="font-semibold text-neutral-dark dark:text-white">Local Bank (EUR/GBP/NGN)</div>
+                                        <div className="font-semibold text-neutral-dark dark:text-white">Local Bank or stablecoin wallet</div>
                                     </div>
                                 </div>
                             </div>

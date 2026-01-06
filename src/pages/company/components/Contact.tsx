@@ -18,7 +18,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-primary dark:text-white font-bold">Headquarters</h4>
-                                    <p className="text-neutral-grey dark:text-gray-400">123 Finance District, New York, NY 10005, USA</p>
+                                    <p className="text-neutral-grey dark:text-gray-400">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -30,15 +30,7 @@ export default function Contact() {
                                     <p className="text-neutral-grey dark:text-gray-400">contact@afblock.com</p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-4">
-                                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary dark:text-accent">
-                                    <span className="material-symbols-outlined text-xl">call</span>
-                                </div>
-                                <div>
-                                    <h4 className="text-primary dark:text-white font-bold">Call Us</h4>
-                                    <p className="text-neutral-grey dark:text-gray-400">+1 (555) 123-4567</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     {/* Form */}
@@ -96,6 +88,9 @@ export default function Contact() {
                             >
                                 Send Message
                             </button>
+                            <p className="text-xs text-center text-neutral-grey dark:text-gray-500 mt-4">
+                                By submitting this form, you agree to our <a href="#" className="underline hover:text-primary dark:hover:text-white">Privacy Policy</a>.
+                            </p>
                         </form>
                     </div>
                 </div>
