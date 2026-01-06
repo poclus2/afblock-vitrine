@@ -42,6 +42,11 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: Debug Network Connectivity
+        run: |
+           echo "Testing connectivity to Droplet on port 22..."
+           nc -v -z -w 5 ${{ secrets.DO_HOST }} 22 || echo "CONNECTION FAILED: Unable to reach port 22. Check IP and Firewall."
+
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
