@@ -1,13 +1,45 @@
+import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { blogPosts } from '../../data/blogPosts';
+import { blogApi, BlogPost } from '../../services/api';
 
 export default function BlogPostPage() {
-    const { id } = useParams();
-    const post = blogPosts.find(p => p.id === Number(id));
+    const { slug } = useParams<{ slug: string }>();
+    const [post, setPost] = useState<BlogPost | null>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
 
-    if (!post) {
+    useEffect(() => {
+        const fetchPost = async () => {
+            if (!slug) return;
+            try {
+                setLoading(true);
+                const fetchedPost = await blogApi.getPostBySlug(slug);
+                if (fetchedPost) {
+                    setPost(fetchedPost);
+                } else {
+                    setError(true);
+                }
+            } catch (err) {
+                console.error(err);
+                setError(true);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchPost();
+    }, [slug]);
+
+    if (loading) {
         return (
-            <div className="py-32 text-center">
+            <div className="flex justify-center items-center min-h-screen bg-background-light dark:bg-background-dark">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+            </div>
+        );
+    }
+
+    if (error || !post) {
+        return (
+            <div className="py-32 text-center bg-background-light dark:bg-background-dark min-h-screen">
                 <h1 className="text-3xl font-bold text-primary dark:text-white mb-4">Post not found</h1>
                 <Link to="/blog" className="text-accent hover:underline">Return to Blog</Link>
             </div>
@@ -15,7 +47,7 @@ export default function BlogPostPage() {
     }
 
     return (
-        <article className="py-20 bg-white dark:bg-background-dark">
+        <article className="py-20 bg-white dark:bg-background-dark min-h-screen">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Link to="/blog" className="inline-flex items-center text-sm text-neutral-grey hover:text-primary dark:text-gray-400 dark:hover:text-white mb-8 transition-colors">
                     <span className="material-symbols-outlined text-sm mr-2">arrow_back</span>
@@ -33,33 +65,23 @@ export default function BlogPostPage() {
                     {post.title}
                 </h1>
 
-                <div className="w-full h-96 rounded-2xl overflow-hidden mb-12 shadow-lg">
-                    <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+                {post.image && (
+                    <div className="w-full h-96 rounded-2xl overflow-hidden mb-12 shadow-lg">
+                        <img
+                            src={post.image}
+                            alt={post.title}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                )}
 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                     <p className="text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-8 font-medium">
                         {post.excerpt}
                     </p>
-                    <p>
-                        [Content placeholder for "{post.title}". The user indicated they will write this article soon.]
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <h2>Key Takeaways</h2>
-                    <ul>
-                        <li>Understanding the shift in treasury infrastructure.</li>
-                        <li>How regulatory compliance is built into the protocol level.</li>
-                        <li>Strategies for optimizing liquidity with instant settlement.</li>
-                    </ul>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+
+                    {/* Render HTML content from backend */}
+                    <div dangerouslySetInnerHTML={{ __html: post.content }} />
                 </div>
             </div>
         </article>

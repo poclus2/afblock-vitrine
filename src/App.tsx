@@ -19,7 +19,7 @@ function App() {
         <Route path="compliance" element={<CompliancePage />} />
         <Route path="pricing" element={<PricingPage />} />
         <Route path="blog" element={<BlogPage />} />
-        <Route path="blog/:id" element={<BlogPostPage />} />
+        <Route path="blog/:slug" element={<BlogPostPage />} />
         <Route path="company" element={<CompanyPage />} />
         <Route path="*" element={<div className="p-10 text-center">404 Not Found</div>} />
       </Route>
