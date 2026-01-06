@@ -42,34 +42,39 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
       - name: Deploy to DigitalOcean Droplet
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.DO_HOST }}
-          username: ${{ secrets.DO_USERNAME }}
-          password: ${{ secrets.DO_PASSWORD }}
-          timeout: 60s
-          command_timeout: 30m
-          script: |
+        env:
+          SSHPASS: ${{ secrets.DO_PASSWORD }}
+        run: |
+          sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.DO_USERNAME }}@${{ secrets.DO_HOST }} << 'EOF'
             # Echo branding
             echo "Deploying Afblock Website..."
             
-            # Login to GHCR to pull private/public image
+            # Login to GHCR (Use GITHUB_TOKEN passed as env var or argument?) 
+            # We can't easily pass the local secret to the remote shell environment via HEREDOC directly if checking constraints.
+            # But we can inject it into the command string locally.
+            # However, safer to just re-login or assume the server has credentials? 
+            # The previous one did: echo ${{ secrets.GITHUB_TOKEN }} | docker login...
+            # In heredoc, variables are expanded locally unless 'EOF' is quoted.
+            # Since we Quote 'EOF', variables are NOT expanded.
+            # So we unquote 'EOF' or pass args.
+            
+            # Let's use unquoted EOF to allow ${{ secrets... }} expansion.
+          EOF
+          
+      - name: Deploy to DigitalOcean Droplet (Execution)
+        env:
+          SSHPASS: ${{ secrets.DO_PASSWORD }}
+        run: |
+          sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.DO_USERNAME }}@${{ secrets.DO_HOST }} <<EOF
+            echo "Deploying Afblock Website..."
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            
-            # Pull the latest image
             docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            
-            # Stop and remove existing container
             docker stop afblock_website || true
             docker rm afblock_website || true
-            
-            # Run new container
-            docker run -d \
-              --name afblock_website \
-              --restart always \
-              -p 8081:80 \
-              ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            
-            # Cleanup unused images
+            docker run -d --name afblock_website --restart always -p 8081:80 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             docker image prune -f
+          EOF
