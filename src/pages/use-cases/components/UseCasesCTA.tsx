@@ -12,9 +12,9 @@ export default function UseCasesCTA() {
                     <a href="https://afblock-business.dartsia.app/signup" className="inline-flex h-12 min-w-[160px] items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/20 transition hover:bg-[#0a2560] hover:-translate-y-0.5">
                         Start Building
                     </a>
-                    <button className="inline-flex h-12 min-w-[160px] items-center justify-center rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark px-6 text-base font-bold text-neutral-dark dark:text-white transition hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-gray-300">
+                    <a href="/company#contact" className="inline-flex h-12 min-w-[160px] items-center justify-center rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark px-6 text-base font-bold text-neutral-dark dark:text-white transition hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-gray-300">
                         Talk to Sales
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

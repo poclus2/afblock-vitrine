@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
     return (
         <section className="relative overflow-hidden bg-gradient-to-br from-background-off to-blue-50 dark:from-background-dark dark:to-slate-900 pt-20 pb-24 lg:pt-32 lg:pb-32">
@@ -23,12 +25,12 @@ export default function Hero() {
                                 Open account
                                 <span className="material-icons text-sm">arrow_forward</span>
                             </a>
-                            <a
-                                href="#"
+                            <Link
+                                to="/demo"
                                 className="w-full sm:w-auto bg-white dark:bg-slate-800 text-primary dark:text-white border-2 border-gray-200 dark:border-slate-700 px-8 py-4 rounded-xl font-semibold text-center hover:bg-gray-50 dark:hover:bg-slate-700 transition-all"
                             >
                                 Book a demo
-                            </a>
+                            </Link>
                         </div>
                         <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">
                             Regulated financial technology provider. Not a bank.

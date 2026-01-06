@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function PricingCTA() {
     return (
         <section className="py-24 bg-black relative overflow-hidden">
@@ -34,10 +36,10 @@ export default function PricingCTA() {
                             Open account
                             <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                         </a>
-                        <button className="bg-transparent border border-gray-700 hover:border-accent text-white hover:text-accent px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                        <Link to="/demo" className="bg-transparent border border-gray-700 hover:border-accent text-white hover:text-accent px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
                             Schedule demo
                             <span className="material-symbols-outlined">calendar_today</span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

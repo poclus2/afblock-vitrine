@@ -71,3 +71,35 @@ export const blogApi = {
         }
     }
 };
+
+export interface DemoRequestData {
+    enterprise_name: string;
+    country: string;
+    use_case: string;
+    business_email: string;
+    phone_number: string;
+    transaction_volume: string;
+}
+
+export const companyApi = {
+    sendDemoRequest: async (data: DemoRequestData): Promise<boolean> => {
+        try {
+            const response = await fetch(`${API_BASE_URL}/company/demo`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || 'Failed to submit demo request');
+            }
+            return true;
+        } catch (error) {
+            console.error('Error submitting demo request:', error);
+            throw error;
+        }
+    }
+};
+
