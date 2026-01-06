@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Afblock - Platform</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<script>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Afblock - Platform</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -43,387 +46,513 @@
             },
         };
     </script>
-<style>html { scroll-behavior: smooth; }.gradient-mesh {
-            background: radial-gradient(at 0% 0%, hsla(217,91%,27%,0.15) 0px, transparent 50%),
-                        radial-gradient(at 100% 0%, hsla(43,96%,58%,0.1) 0px, transparent 50%),
-                        radial-gradient(at 100% 100%, hsla(217,91%,27%,0.1) 0px, transparent 50%),
-                        radial-gradient(at 0% 100%, hsla(43,96%,58%,0.05) 0px, transparent 50%);
+    <style>
+        html {
+            scroll-behavior: smooth;
         }
+
+        .gradient-mesh {
+            background: radial-gradient(at 0% 0%, hsla(217, 91%, 27%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(43, 96%, 58%, 0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(217, 91%, 27%, 0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(43, 96%, 58%, 0.05) 0px, transparent 50%);
+        }
+
         .dark .gradient-mesh {
-            background: radial-gradient(at 0% 0%, hsla(217,91%,27%,0.3) 0px, transparent 50%),
-                        radial-gradient(at 100% 0%, hsla(43,96%,58%,0.15) 0px, transparent 50%),
-                        radial-gradient(at 100% 100%, hsla(217,91%,27%,0.2) 0px, transparent 50%);
+            background: radial-gradient(at 0% 0%, hsla(217, 91%, 27%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(43, 96%, 58%, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(217, 91%, 27%, 0.2) 0px, transparent 50%);
         }
     </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-sans antialiased transition-colors duration-300">
-<nav class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<div class="flex-shrink-0 flex items-center gap-2">
-<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-<span class="text-white font-bold text-lg">A</span>
-</div>
-<span class="text-2xl font-bold text-primary dark:text-white tracking-tight">Afblock</span>
-</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-text-body-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Products</a>
-<a class="text-primary dark:text-white font-semibold text-sm transition-colors" href="#">Platform</a>
-<a class="text-text-body-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Developers</a>
-<a class="text-text-body-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors" href="#">Company</a>
-</div>
-<div class="hidden md:flex items-center space-x-4">
-<a class="text-text-main-light dark:text-white font-medium text-sm hover:underline" href="#">Log in</a>
-<a class="bg-primary hover:bg-blue-900 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-blue-900/20" href="#">Get started</a>
-</div>
-<div class="md:hidden">
-<button class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-white">
-<span class="material-icons-round text-3xl">menu</span>
-</button>
-</div>
-</div>
-</div>
-</nav>
-<header class="relative overflow-hidden pt-20 pb-32 gradient-mesh">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-surface-dark border border-blue-100 dark:border-gray-700 mb-8">
-<span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-<span class="text-xs font-semibold text-primary dark:text-blue-300 uppercase tracking-wider">Platform</span>
-</div>
-<h1 class="text-5xl md:text-7xl font-bold text-primary dark:text-white tracking-tight leading-tight mb-8">
-                Stablecoin-first infrastructure,<br class="hidden md:block"/>
+    <nav
+        class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">A</span>
+                    </div>
+                    <span class="text-2xl font-bold text-primary dark:text-white tracking-tight">Afblock</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-text-body-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors"
+                        href="#">Products</a>
+                    <a class="text-primary dark:text-white font-semibold text-sm transition-colors"
+                        href="#">Platform</a>
+                    <a class="text-text-body-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors"
+                        href="#">Developers</a>
+                    <a class="text-text-body-light dark:text-gray-300 hover:text-primary dark:hover:text-white text-sm font-medium transition-colors"
+                        href="#">Company</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a class="text-text-main-light dark:text-white font-medium text-sm hover:underline"
+                        href="https://afblock-business.dartsia.app/login">Log in</a>
+                    <a class="bg-primary hover:bg-blue-900 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg shadow-blue-900/20"
+                        href="https://afblock-business.dartsia.app/signup">Get started</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-white">
+                        <span class="material-icons-round text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="relative overflow-hidden pt-20 pb-32 gradient-mesh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-surface-dark border border-blue-100 dark:border-gray-700 mb-8">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                <span
+                    class="text-xs font-semibold text-primary dark:text-blue-300 uppercase tracking-wider">Platform</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-primary dark:text-white tracking-tight leading-tight mb-8">
+                Stablecoin-first infrastructure,<br class="hidden md:block" />
                 built for <span class="relative inline-block">
-<span class="relative z-10">business operations</span>
-<span class="absolute bottom-2 left-0 w-full h-3 bg-accent/30 -z-0"></span>
-</span>
-</h1>
-<p class="mt-6 max-w-2xl mx-auto text-xl text-text-body-light dark:text-text-body-dark leading-relaxed">
-                Empower your treasury with a unified layer to collect, convert, and manage digital assets with institutional-grade compliance and auditability.
+                    <span class="relative z-10">business operations</span>
+                    <span class="absolute bottom-2 left-0 w-full h-3 bg-accent/30 -z-0"></span>
+                </span>
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-xl text-text-body-light dark:text-text-body-dark leading-relaxed">
+                Empower your treasury with a unified layer to collect, convert, and manage digital assets with
+                institutional-grade compliance and auditability.
             </p>
-<div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-primary hover:bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl shadow-primary/20 transition-all transform hover:-translate-y-1">
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <button
+                    class="bg-primary hover:bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl shadow-primary/20 transition-all transform hover:-translate-y-1">
                     Book a demo
                 </button>
-<button class="bg-transparent border-2 border-primary dark:border-white/20 text-primary dark:text-white hover:bg-primary/5 dark:hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all">
+                <button
+                    class="bg-transparent border-2 border-primary dark:border-white/20 text-primary dark:text-white hover:bg-primary/5 dark:hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all">
                     Open account
                 </button>
-</div>
-<div class="mt-20 relative max-w-5xl mx-auto">
-<div class="absolute inset-0 bg-accent/20 blur-3xl rounded-full opacity-30 transform translate-y-20"></div>
-<img alt="Abstract interface showcasing Afblock dashboard metrics" class="relative rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-800 w-full h-auto object-cover opacity-90 dark:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcT4xZ1_SZiiS1LleqqcQw0rx-PvTrGTUbJbP7pZNIqY60Gxz-QYL_BACkCz_y_SbBerzkUwbVJh3pssRi-aGaxPRZgjVya0-blnSAGoNunvky37eylakRIlmNLgKAgkTOttxDCemmkWpyMfkNP1Ur1YWEqA-vXMY-vZc6XWtm4axEEgTagw65FoOA-8rgqPq2t8iXmH902UC5ndks8eMpId_-UapLMgW_iJ_BHB7zbxSHZRdV7Qc93n42samxRMYdiyRBPgUwq-mu"/>
-</div>
-</div>
-</header>
-<section class="py-24 bg-surface-light dark:bg-surface-dark">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-6">
+            </div>
+            <div class="mt-20 relative max-w-5xl mx-auto">
+                <div class="absolute inset-0 bg-accent/20 blur-3xl rounded-full opacity-30 transform translate-y-20">
+                </div>
+                <img alt="Abstract interface showcasing Afblock dashboard metrics"
+                    class="relative rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-800 w-full h-auto object-cover opacity-90 dark:opacity-100"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcT4xZ1_SZiiS1LleqqcQw0rx-PvTrGTUbJbP7pZNIqY60Gxz-QYL_BACkCz_y_SbBerzkUwbVJh3pssRi-aGaxPRZgjVya0-blnSAGoNunvky37eylakRIlmNLgKAgkTOttxDCemmkWpyMfkNP1Ur1YWEqA-vXMY-vZc6XWtm4axEEgTagw65FoOA-8rgqPq2t8iXmH902UC5ndks8eMpId_-UapLMgW_iJ_BHB7zbxSHZRdV7Qc93n42samxRMYdiyRBPgUwq-mu" />
+            </div>
+        </div>
+    </header>
+    <section class="py-24 bg-surface-light dark:bg-surface-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-6">
                 The Operating System for Modern Finance
             </h2>
-<p class="text-lg text-text-body-light dark:text-text-body-dark leading-relaxed">
-                Afblock isn't just a wallet. It's a comprehensive platform layer designed to bridge the gap between traditional banking rails and the efficiency of blockchain technology. We provide the infrastructure for businesses to operate seamlessly in both worlds without the technical overhead.
+            <p class="text-lg text-text-body-light dark:text-text-body-dark leading-relaxed">
+                Afblock isn't just a wallet. It's a comprehensive platform layer designed to bridge the gap between
+                traditional banking rails and the efficiency of blockchain technology. We provide the infrastructure for
+                businesses to operate seamlessly in both worlds without the technical overhead.
             </p>
-</div>
-</section>
-<section class="py-24 bg-background-light dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-primary dark:text-white text-3xl font-bold mb-4">Core Modules</h2>
-<p class="text-text-body-light dark:text-text-body-dark max-w-2xl mx-auto">Everything you need to manage your crypto-treasury in one secure dashboard.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
-<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">account_balance_wallet</span>
-</div>
-<h3 class="text-xl font-bold text-primary dark:text-white mb-3">Multi-Currency Accounts</h3>
-<p class="text-text-body-light dark:text-text-body-dark">Segregated IBANs and crypto wallets for over 15+ currencies and 5+ stablecoins.</p>
-</div>
-<div class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
-<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">swap_horiz</span>
-</div>
-<h3 class="text-xl font-bold text-primary dark:text-white mb-3">Instant Conversion</h3>
-<p class="text-text-body-light dark:text-text-body-dark">Zero-slippage conversion between Fiat and Stablecoins (USDC/USDT) 24/7.</p>
-</div>
-<div class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
-<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">payments</span>
-</div>
-<h3 class="text-xl font-bold text-primary dark:text-white mb-3">B2B Payments</h3>
-<p class="text-text-body-light dark:text-text-body-dark">Pay vendors and invoices globally using crypto rails with automatic fiat settlement.</p>
-</div>
-<div class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
-<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">output</span>
-</div>
-<h3 class="text-xl font-bold text-primary dark:text-white mb-3">Global Off-Ramp</h3>
-<p class="text-text-body-light dark:text-text-body-dark">Automated payout engine to local bank accounts in 60+ countries.</p>
-</div>
-<div class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
-<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">pie_chart</span>
-</div>
-<h3 class="text-xl font-bold text-primary dark:text-white mb-3">Unified Reporting</h3>
-<p class="text-text-body-light dark:text-text-body-dark">Real-time consolidation of all fiat and crypto positions for easy accounting.</p>
-</div>
-<div class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
-<div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-<span class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">gpp_good</span>
-</div>
-<h3 class="text-xl font-bold text-primary dark:text-white mb-3">Built-in Compliance</h3>
-<p class="text-text-body-light dark:text-text-body-dark">Automated KYB, AML screening, and transaction monitoring embedded in every flow.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-surface-light dark:bg-surface-dark overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="mb-16 md:text-center">
-<h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-4">Financial Flows</h2>
-<p class="text-text-body-light dark:text-text-body-dark">Visualizing how money moves through the Afblock infrastructure.</p>
-</div>
-<div class="space-y-16">
-<div class="bg-white dark:bg-background-dark rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800">
-<h3 class="text-xl font-bold text-primary dark:text-white mb-8 flex items-center gap-3">
-<span class="w-8 h-8 rounded-full bg-accent text-primary flex items-center justify-center text-sm font-bold">1</span>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-primary dark:text-white text-3xl font-bold mb-4">Core Modules</h2>
+                <p class="text-text-body-light dark:text-text-body-dark max-w-2xl mx-auto">Everything you need to manage
+                    your crypto-treasury in one secure dashboard.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
+                    <div
+                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">account_balance_wallet</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-3">Multi-Currency Accounts</h3>
+                    <p class="text-text-body-light dark:text-text-body-dark">Segregated IBANs and crypto wallets for
+                        over 15+ currencies and 5+ stablecoins.</p>
+                </div>
+                <div
+                    class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
+                    <div
+                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">swap_horiz</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-3">Instant Conversion</h3>
+                    <p class="text-text-body-light dark:text-text-body-dark">Zero-slippage conversion between Fiat and
+                        Stablecoins (USDC/USDT) 24/7.</p>
+                </div>
+                <div
+                    class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
+                    <div
+                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">payments</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-3">B2B Payments</h3>
+                    <p class="text-text-body-light dark:text-text-body-dark">Pay vendors and invoices globally using
+                        crypto rails with automatic fiat settlement.</p>
+                </div>
+                <div
+                    class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
+                    <div
+                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">output</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-3">Global Off-Ramp</h3>
+                    <p class="text-text-body-light dark:text-text-body-dark">Automated payout engine to local bank
+                        accounts in 60+ countries.</p>
+                </div>
+                <div
+                    class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
+                    <div
+                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">pie_chart</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-3">Unified Reporting</h3>
+                    <p class="text-text-body-light dark:text-text-body-dark">Real-time consolidation of all fiat and
+                        crypto positions for easy accounting.</p>
+                </div>
+                <div
+                    class="group p-8 bg-white dark:bg-surface-dark rounded-3xl border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-lg transition-all">
+                    <div
+                        class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <span
+                            class="material-icons-round text-primary dark:text-blue-300 text-3xl group-hover:text-white transition-colors">gpp_good</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-3">Built-in Compliance</h3>
+                    <p class="text-text-body-light dark:text-text-body-dark">Automated KYB, AML screening, and
+                        transaction monitoring embedded in every flow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-surface-light dark:bg-surface-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 md:text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-4">Financial Flows</h2>
+                <p class="text-text-body-light dark:text-text-body-dark">Visualizing how money moves through the Afblock
+                    infrastructure.</p>
+            </div>
+            <div class="space-y-16">
+                <div
+                    class="bg-white dark:bg-background-dark rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800">
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-8 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-full bg-accent text-primary flex items-center justify-center text-sm font-bold">1</span>
                         Fiat Collection → Stablecoin Payout
                     </h3>
-<div class="flex flex-col md:flex-row items-center justify-between gap-6 relative">
-<div class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
-<span class="material-icons-round text-4xl text-primary dark:text-accent mb-2">account_balance</span>
-<p class="font-semibold text-primary dark:text-white">Inbound Fiat</p>
-<p class="text-sm text-text-body-light dark:text-text-body-dark">Customer pays via Wire/ACH</p>
-</div>
-<div class="hidden md:block flex-shrink-0">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
-</div>
-<div class="md:hidden">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
-</div>
-<div class="flex-1 w-full p-6 bg-primary rounded-2xl text-center shadow-lg relative overflow-hidden">
-<div class="absolute inset-0 bg-accent/10"></div>
-<span class="material-icons-round text-4xl text-white mb-2 relative z-10">sync_alt</span>
-<p class="font-semibold text-white relative z-10">Auto-Conversion</p>
-<p class="text-sm text-blue-100 relative z-10">USD → USDC (1:1)</p>
-</div>
-<div class="hidden md:block flex-shrink-0">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
-</div>
-<div class="md:hidden">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
-</div>
-<div class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
-<span class="material-icons-round text-4xl text-primary dark:text-accent mb-2">account_balance_wallet</span>
-<p class="font-semibold text-primary dark:text-white">Payout</p>
-<p class="text-sm text-text-body-light dark:text-text-body-dark">Sent to Vendor Wallet</p>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-background-dark rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800">
-<h3 class="text-xl font-bold text-primary dark:text-white mb-8 flex items-center gap-3">
-<span class="w-8 h-8 rounded-full bg-accent text-primary flex items-center justify-center text-sm font-bold">2</span>
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative">
+                        <div
+                            class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
+                            <span
+                                class="material-icons-round text-4xl text-primary dark:text-accent mb-2">account_balance</span>
+                            <p class="font-semibold text-primary dark:text-white">Inbound Fiat</p>
+                            <p class="text-sm text-text-body-light dark:text-text-body-dark">Customer pays via Wire/ACH
+                            </p>
+                        </div>
+                        <div class="hidden md:block flex-shrink-0">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
+                        </div>
+                        <div class="md:hidden">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
+                        </div>
+                        <div
+                            class="flex-1 w-full p-6 bg-primary rounded-2xl text-center shadow-lg relative overflow-hidden">
+                            <div class="absolute inset-0 bg-accent/10"></div>
+                            <span class="material-icons-round text-4xl text-white mb-2 relative z-10">sync_alt</span>
+                            <p class="font-semibold text-white relative z-10">Auto-Conversion</p>
+                            <p class="text-sm text-blue-100 relative z-10">USD → USDC (1:1)</p>
+                        </div>
+                        <div class="hidden md:block flex-shrink-0">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
+                        </div>
+                        <div class="md:hidden">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
+                        </div>
+                        <div
+                            class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
+                            <span
+                                class="material-icons-round text-4xl text-primary dark:text-accent mb-2">account_balance_wallet</span>
+                            <p class="font-semibold text-primary dark:text-white">Payout</p>
+                            <p class="text-sm text-text-body-light dark:text-text-body-dark">Sent to Vendor Wallet</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 dark:border-gray-800">
+                    <h3 class="text-xl font-bold text-primary dark:text-white mb-8 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-full bg-accent text-primary flex items-center justify-center text-sm font-bold">2</span>
                         Stablecoin Revenue → Global Off-ramp
                     </h3>
-<div class="flex flex-col md:flex-row items-center justify-between gap-6">
-<div class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
-<span class="material-icons-round text-4xl text-primary dark:text-accent mb-2">currency_bitcoin</span>
-<p class="font-semibold text-primary dark:text-white">Crypto Deposit</p>
-<p class="text-sm text-text-body-light dark:text-text-body-dark">Receive USDC/USDT</p>
-</div>
-<div class="hidden md:block flex-shrink-0">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
-</div>
-<div class="md:hidden">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
-</div>
-<div class="flex-1 w-full p-6 bg-primary rounded-2xl text-center shadow-lg relative overflow-hidden">
-<div class="absolute inset-0 bg-accent/10"></div>
-<span class="material-icons-round text-4xl text-white mb-2 relative z-10">currency_exchange</span>
-<p class="font-semibold text-white relative z-10">FX Liquidation</p>
-<p class="text-sm text-blue-100 relative z-10">USDC → EUR/GBP/SGD</p>
-</div>
-<div class="hidden md:block flex-shrink-0">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
-</div>
-<div class="md:hidden">
-<span class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
-</div>
-<div class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
-<span class="material-icons-round text-4xl text-primary dark:text-accent mb-2">public</span>
-<p class="font-semibold text-primary dark:text-white">Local Transfer</p>
-<p class="text-sm text-text-body-light dark:text-text-body-dark">Funds arrive in bank</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light dark:bg-background-dark">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div>
-<h2 class="text-3xl md:text-5xl font-bold text-primary dark:text-white mb-6 leading-tight">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div
+                            class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
+                            <span
+                                class="material-icons-round text-4xl text-primary dark:text-accent mb-2">currency_bitcoin</span>
+                            <p class="font-semibold text-primary dark:text-white">Crypto Deposit</p>
+                            <p class="text-sm text-text-body-light dark:text-text-body-dark">Receive USDC/USDT</p>
+                        </div>
+                        <div class="hidden md:block flex-shrink-0">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
+                        </div>
+                        <div class="md:hidden">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
+                        </div>
+                        <div
+                            class="flex-1 w-full p-6 bg-primary rounded-2xl text-center shadow-lg relative overflow-hidden">
+                            <div class="absolute inset-0 bg-accent/10"></div>
+                            <span
+                                class="material-icons-round text-4xl text-white mb-2 relative z-10">currency_exchange</span>
+                            <p class="font-semibold text-white relative z-10">FX Liquidation</p>
+                            <p class="text-sm text-blue-100 relative z-10">USDC → EUR/GBP/SGD</p>
+                        </div>
+                        <div class="hidden md:block flex-shrink-0">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_forward</span>
+                        </div>
+                        <div class="md:hidden">
+                            <span
+                                class="material-icons-round text-gray-300 dark:text-gray-600 text-3xl">arrow_downward</span>
+                        </div>
+                        <div
+                            class="flex-1 w-full p-6 bg-surface-light dark:bg-surface-dark rounded-2xl text-center border border-dashed border-primary/20 dark:border-white/20">
+                            <span class="material-icons-round text-4xl text-primary dark:text-accent mb-2">public</span>
+                            <p class="font-semibold text-primary dark:text-white">Local Transfer</p>
+                            <p class="text-sm text-text-body-light dark:text-text-body-dark">Funds arrive in bank</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-primary dark:text-white mb-6 leading-tight">
                         More than just an On-Ramp.
                     </h2>
-<p class="text-lg text-text-body-light dark:text-text-body-dark mb-8">
-                        Most solutions offer simple conversion. Afblock offers a complete financial operating system tailored for high-volume business needs.
+                    <p class="text-lg text-text-body-light dark:text-text-body-dark mb-8">
+                        Most solutions offer simple conversion. Afblock offers a complete financial operating system
+                        tailored for high-volume business needs.
                     </p>
-<div class="flex items-center gap-4">
-<a class="text-primary dark:text-accent font-semibold flex items-center hover:underline" href="#">
+                    <div class="flex items-center gap-4">
+                        <a class="text-primary dark:text-accent font-semibold flex items-center hover:underline"
+                            href="#">
                             Read our case studies <span class="material-icons-round ml-1">arrow_forward</span>
-</a>
-</div>
-</div>
-<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-3xl border border-gray-100 dark:border-gray-800">
-<ul class="space-y-6">
-<li class="flex items-start">
-<span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
-<span class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
-</span>
-<div class="ml-4">
-<h4 class="text-lg font-bold text-primary dark:text-white">Dedicated IBANs</h4>
-<p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Accounts in your company's name, not pooled wallets.</p>
-</div>
-</li>
-<li class="flex items-start">
-<span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
-<span class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
-</span>
-<div class="ml-4">
-<h4 class="text-lg font-bold text-primary dark:text-white">Programmable API</h4>
-<p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Automate complex treasury flows via our REST API.</p>
-</div>
-</li>
-<li class="flex items-start">
-<span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
-<span class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
-</span>
-<div class="ml-4">
-<h4 class="text-lg font-bold text-primary dark:text-white">Multi-User Governance</h4>
-<p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Set approval policies, spending limits, and roles.</p>
-</div>
-</li>
-<li class="flex items-start">
-<span class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
-<span class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
-</span>
-<div class="ml-4">
-<h4 class="text-lg font-bold text-primary dark:text-white">Audit-Ready Reporting</h4>
-<p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Download CSV/PDF reports formatted for your ERP.</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-surface-light dark:bg-surface-dark">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl font-bold text-primary dark:text-white mb-4">Built for the future of finance</h2>
-<p class="text-text-body-light dark:text-text-body-dark">Trusted by forward-thinking teams across the industry.</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-<div class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
-<span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">store</span>
-<h3 class="font-semibold text-primary dark:text-white">SMEs</h3>
-</div>
-<div class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
-<span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">rocket_launch</span>
-<h3 class="font-semibold text-primary dark:text-white">Fintechs</h3>
-</div>
-<div class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
-<span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">layers</span>
-<h3 class="font-semibold text-primary dark:text-white">Platforms</h3>
-</div>
-<div class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
-<span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">shopping_cart</span>
-<h3 class="font-semibold text-primary dark:text-white">Marketplaces</h3>
-</div>
-<div class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
-<span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">trending_up</span>
-<h3 class="font-semibold text-primary dark:text-white">Treasury Teams</h3>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light dark:bg-background-dark">
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="bg-primary rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden">
-<div class="absolute top-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-<div class="absolute bottom-0 right-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
-<h2 class="relative z-10 text-3xl md:text-5xl font-bold text-white mb-6">
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-8 rounded-3xl border border-gray-100 dark:border-gray-800">
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                <span
+                                    class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
+                            </span>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-primary dark:text-white">Dedicated IBANs</h4>
+                                <p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Accounts in your
+                                    company's name, not pooled wallets.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                <span
+                                    class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
+                            </span>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-primary dark:text-white">Programmable API</h4>
+                                <p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Automate complex
+                                    treasury flows via our REST API.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                <span
+                                    class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
+                            </span>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-primary dark:text-white">Multi-User Governance</h4>
+                                <p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Set approval
+                                    policies, spending limits, and roles.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mt-1">
+                                <span
+                                    class="material-icons-round text-green-600 dark:text-green-400 text-sm">check</span>
+                            </span>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-primary dark:text-white">Audit-Ready Reporting</h4>
+                                <p class="text-sm text-text-body-light dark:text-text-body-dark mt-1">Download CSV/PDF
+                                    reports formatted for your ERP.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-surface-light dark:bg-surface-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-white mb-4">Built for the future of finance</h2>
+                <p class="text-text-body-light dark:text-text-body-dark">Trusted by forward-thinking teams across the
+                    industry.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
+                    <span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">store</span>
+                    <h3 class="font-semibold text-primary dark:text-white">SMEs</h3>
+                </div>
+                <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
+                    <span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">rocket_launch</span>
+                    <h3 class="font-semibold text-primary dark:text-white">Fintechs</h3>
+                </div>
+                <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
+                    <span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">layers</span>
+                    <h3 class="font-semibold text-primary dark:text-white">Platforms</h3>
+                </div>
+                <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
+                    <span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">shopping_cart</span>
+                    <h3 class="font-semibold text-primary dark:text-white">Marketplaces</h3>
+                </div>
+                <div
+                    class="p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm text-center border border-transparent hover:border-primary/20 dark:hover:border-white/20 transition-all cursor-default">
+                    <span class="material-icons-round text-primary dark:text-accent text-3xl mb-3">trending_up</span>
+                    <h3 class="font-semibold text-primary dark:text-white">Treasury Teams</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden">
+                <div
+                    class="absolute top-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2">
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2">
+                </div>
+                <h2 class="relative z-10 text-3xl md:text-5xl font-bold text-white mb-6">
                     Ready to modernize your financial stack?
                 </h2>
-<p class="relative z-10 text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
+                <p class="relative z-10 text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
                     Join hundreds of businesses moving billions in volume. Get set up in less than 48 hours.
                 </p>
-<div class="relative z-10 flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-full text-lg font-bold shadow-lg transition-all">
+                <div class="relative z-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                        class="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-full text-lg font-bold shadow-lg transition-all">
                         Book a demo
                     </button>
-<button class="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-full text-lg font-bold transition-all">
+                    <button
+                        class="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-full text-lg font-bold transition-all">
                         Open account
                     </button>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-surface-light dark:bg-surface-dark pt-16 pb-8 border-t border-gray-200 dark:border-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-<div class="col-span-2 lg:col-span-2">
-<div class="flex items-center gap-2 mb-4">
-<div class="w-6 h-6 bg-primary rounded flex items-center justify-center">
-<span class="text-white font-bold text-xs">A</span>
-</div>
-<span class="text-xl font-bold text-primary dark:text-white">Afblock</span>
-</div>
-<p class="text-sm text-text-body-light dark:text-text-body-dark max-w-xs mb-6">
-                        The financial infrastructure for the internet economy. Built for businesses, powered by stablecoins.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-surface-light dark:bg-surface-dark pt-16 pb-8 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-6 h-6 bg-primary rounded flex items-center justify-center">
+                            <span class="text-white font-bold text-xs">A</span>
+                        </div>
+                        <span class="text-xl font-bold text-primary dark:text-white">Afblock</span>
+                    </div>
+                    <p class="text-sm text-text-body-light dark:text-text-body-dark max-w-xs mb-6">
+                        The financial infrastructure for the internet economy. Built for businesses, powered by
+                        stablecoins.
                     </p>
-<div class="flex space-x-4">
-<a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" href="#"><span class="sr-only">Twitter</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
-<a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" href="#"><span class="sr-only">LinkedIn</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg></a>
-</div>
-</div>
-<div>
-<h4 class="font-bold text-primary dark:text-white mb-4">Product</h4>
-<ul class="space-y-3 text-sm">
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Platform</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Global Accounts</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Corporate Cards</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Pricing</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-primary dark:text-white mb-4">Resources</h4>
-<ul class="space-y-3 text-sm">
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Documentation</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">API Reference</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Blog</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Help Center</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-primary dark:text-white mb-4">Legal</h4>
-<ul class="space-y-3 text-sm">
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Cookie Policy</a></li>
-<li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors" href="#">Compliance</a></li>
-</ul>
-</div>
-</div>
-<div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-text-body-light dark:text-text-body-dark">
-<p>© 2023 Afblock Inc. All rights reserved.</p>
-<div class="mt-4 md:mt-0">
-<p>Afblock is a financial technology company, not a bank. Banking services provided by partners.</p>
-</div>
-</div>
-</div>
-</footer>
-<script>
+                    <div class="flex space-x-4">
+                        <a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
+                            href="#"><span class="sr-only">Twitter</span><svg class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg></a>
+                        <a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
+                            href="#"><span class="sr-only">LinkedIn</span><svg class="h-5 w-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-primary dark:text-white mb-4">Product</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Platform</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Global Accounts</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Corporate Cards</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-primary dark:text-white mb-4">Resources</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Documentation</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">API Reference</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Blog</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-primary dark:text-white mb-4">Legal</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Privacy Policy</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Terms of Service</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Cookie Policy</a></li>
+                        <li><a class="text-text-body-light dark:text-text-body-dark hover:text-primary dark:hover:text-white transition-colors"
+                                href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-text-body-light dark:text-text-body-dark">
+                <p>© 2023 Afblock Inc. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <p>Afblock is a financial technology company, not a bank. Banking services provided by partners.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
         // Check local storage or system preference
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -432,4 +561,6 @@
         }
     </script>
 
-</body></html>
+</body>
+
+</html>
