@@ -45,25 +45,7 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
-      - name: Deploy to DigitalOcean Droplet
-        env:
-          SSHPASS: ${{ secrets.DO_PASSWORD }}
-        run: |
-          sshpass -e ssh -o StrictHostKeyChecking=no ${{ secrets.DO_USERNAME }}@${{ secrets.DO_HOST }} << 'EOF'
-            # Echo branding
-            echo "Deploying Afblock Website..."
-            
-            # Login to GHCR (Use GITHUB_TOKEN passed as env var or argument?) 
-            # We can't easily pass the local secret to the remote shell environment via HEREDOC directly if checking constraints.
-            # But we can inject it into the command string locally.
-            # However, safer to just re-login or assume the server has credentials? 
-            # The previous one did: echo ${{ secrets.GITHUB_TOKEN }} | docker login...
-            # In heredoc, variables are expanded locally unless 'EOF' is quoted.
-            # Since we Quote 'EOF', variables are NOT expanded.
-            # So we unquote 'EOF' or pass args.
-            
-            # Let's use unquoted EOF to allow ${{ secrets... }} expansion.
-          EOF
+
           
       - name: Deploy to DigitalOcean Droplet (Execution)
         env:
