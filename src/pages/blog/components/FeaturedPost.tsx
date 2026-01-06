@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BlogPost } from '../../../services/api';
+import type { BlogPost } from '../../../services/api';
 
 interface FeaturedPostProps {
     post?: BlogPost;

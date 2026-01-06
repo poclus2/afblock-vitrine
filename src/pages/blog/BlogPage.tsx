@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import FeaturedPost from './components/FeaturedPost';
 import BlogGrid from './components/BlogGrid';
 import Newsletter from './components/Newsletter';
-import { blogApi, BlogPost } from '../../services/api';
+import { blogApi, type BlogPost } from '../../services/api';
 
 export default function BlogPage() {
     const [posts, setPosts] = useState<BlogPost[]>([]);
