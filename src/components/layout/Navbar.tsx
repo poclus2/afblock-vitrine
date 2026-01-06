@@ -42,18 +42,18 @@ export default function Navbar() {
 
                 {/* Desktop Buttons */}
                 <div className="hidden gap-3 md:flex">
-                    <Link
-                        to="/login"
+                    <a
+                        href="https://afblock-business.dartsia.app/login"
                         className="flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-5 text-sm font-semibold text-neutral-dark transition hover:bg-gray-50 dark:bg-surface-dark dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"
                     >
                         Log In
-                    </Link>
-                    <Link
-                        to="/register"
+                    </a>
+                    <a
+                        href="https://afblock-business.dartsia.app/signup"
                         className="flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0a2560] hover:shadow-md"
                     >
                         Get Started
-                    </Link>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -87,20 +87,20 @@ export default function Navbar() {
                             </NavLink>
                         ))}
                         <div className="mt-4 flex flex-col gap-2 pb-2">
-                            <Link
-                                to="/login"
+                            <a
+                                href="https://afblock-business.dartsia.app/login"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="flex h-10 w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-5 text-sm font-semibold text-neutral-dark transition hover:bg-gray-50 dark:bg-surface-dark dark:border-gray-700 dark:text-white"
                             >
                                 Log In
-                            </Link>
-                            <Link
-                                to="/register"
+                            </a>
+                            <a
+                                href="https://afblock-business.dartsia.app/signup"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="flex h-10 w-full items-center justify-center rounded-lg bg-primary px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0a2560]"
                             >
                                 Get Started
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

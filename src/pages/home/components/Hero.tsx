@@ -17,7 +17,7 @@ export default function Hero() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                             <a
-                                href="#"
+                                href="https://afblock-business.dartsia.app/signup"
                                 className="w-full sm:w-auto bg-primary text-white border-2 border-primary px-8 py-4 rounded-xl font-semibold text-center hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
                             >
                                 Open account

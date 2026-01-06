@@ -14,10 +14,10 @@ export default function Hero() {
                     No hidden fees, no monthly subscriptions. Pay only for what you use as you scale your global financial operations with Afblock.
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                    <button className="bg-primary text-white px-8 py-3.5 rounded-xl font-medium hover:bg-[#0a2a60] transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2">
+                    <a href="https://afblock-business.dartsia.app/signup" className="bg-primary text-white px-8 py-3.5 rounded-xl font-medium hover:bg-[#0a2a60] transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2">
                         Open account
                         <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </button>
+                    </a>
                     <button className="bg-white dark:bg-surface-dark text-primary dark:text-white border border-gray-200 dark:border-gray-700 px-8 py-3.5 rounded-xl font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
                         Book a demo
                     </button>

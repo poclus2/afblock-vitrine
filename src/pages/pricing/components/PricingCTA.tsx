@@ -30,10 +30,10 @@ export default function PricingCTA() {
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <button className="bg-primary hover:bg-[#1a4490] text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group">
+                        <a href="https://afblock-business.dartsia.app/signup" className="bg-primary hover:bg-[#1a4490] text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 group">
                             Open account
                             <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                        </button>
+                        </a>
                         <button className="bg-transparent border border-gray-700 hover:border-accent text-white hover:text-accent px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
                             Schedule demo
                             <span className="material-symbols-outlined">calendar_today</span>

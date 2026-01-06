@@ -13,7 +13,7 @@ export default function CTA() {
                         Book a demo
                     </a>
                     <a
-                        href="#"
+                        href="https://afblock-business.dartsia.app/signup"
                         className="w-full sm:w-auto border-2 border-primary dark:border-blue-400 text-primary dark:text-blue-300 px-8 py-4 rounded-xl font-semibold text-center hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
                     >
                         Open account
