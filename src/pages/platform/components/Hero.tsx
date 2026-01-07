@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
     return (
         <header className="relative overflow-hidden pt-20 pb-32 gradient-mesh">
@@ -20,12 +22,12 @@ export default function Hero() {
                     Empower your treasury with a unified layer to collect, convert, and manage digital assets with institutional-grade compliance and auditability.
                 </p>
                 <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                    <button className="bg-primary hover:bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl shadow-primary/20 transition-all transform hover:-translate-y-1">
+                    <Link to="/demo" className="bg-primary hover:bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl shadow-primary/20 transition-all transform hover:-translate-y-1 flex items-center justify-center text-center">
                         Book a demo
-                    </button>
-                    <button className="bg-transparent border-2 border-primary dark:border-white/20 text-primary dark:text-white hover:bg-primary/5 dark:hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all">
+                    </Link>
+                    <a href="https://afblock-business.dartsia.app/signup" className="bg-transparent border-2 border-primary dark:border-white/20 text-primary dark:text-white hover:bg-primary/5 dark:hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold transition-all flex items-center justify-center text-center">
                         Open account
-                    </button>
+                    </a>
                 </div>
                 <div className="mt-20 relative max-w-5xl mx-auto">
                     <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full opacity-30 transform translate-y-20"></div>

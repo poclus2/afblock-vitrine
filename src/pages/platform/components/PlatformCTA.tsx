@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function PlatformCTA() {
     return (
         <section className="py-24 bg-background-light dark:bg-background-dark">
@@ -14,12 +16,12 @@ export default function PlatformCTA() {
                         Join hundreds of businesses moving billions in volume. Get set up in less than 48 hours.
                     </p>
                     <div className="relative z-10 flex flex-col sm:flex-row justify-center gap-4">
-                        <button className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-full text-lg font-bold shadow-lg transition-all">
+                        <Link to="/demo" className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-full text-lg font-bold shadow-lg transition-all flex items-center justify-center text-center">
                             Book a demo
-                        </button>
-                        <button className="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-full text-lg font-bold transition-all">
+                        </Link>
+                        <a href="https://afblock-business.dartsia.app/signup" className="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-primary px-8 py-4 rounded-full text-lg font-bold transition-all flex items-center justify-center text-center">
                             Open account
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
