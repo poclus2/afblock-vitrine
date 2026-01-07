@@ -54,8 +54,8 @@ export default function Footer() {
                 <div className="mt-12 border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-500 dark:text-subtext-dark">© 2026 Afblock Technologies L.L.C-FZ. All rights reserved.</p>
                     <div className="flex gap-6">
-                        <Link className="text-xs text-gray-500 hover:text-primary dark:text-subtext-dark dark:hover:text-white transition" to="/privacy-policy">Privacy Policy</Link>
-                        <Link className="text-xs text-gray-500 hover:text-primary dark:text-subtext-dark dark:hover:text-white transition" to="/terms-of-service">Terms of Service</Link>
+                        <Link className="text-xs text-gray-500 hover:text-primary dark:text-subtext-dark dark:hover:text-white transition" to="/company">Privacy Policy</Link>
+                        <Link className="text-xs text-gray-500 hover:text-primary dark:text-subtext-dark dark:hover:text-white transition" to="/company">Terms of Service</Link>
                     </div>
                 </div>
             </div>
