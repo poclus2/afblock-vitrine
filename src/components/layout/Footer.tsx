@@ -44,10 +44,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-sm font-semibold text-neutral-dark dark:text-white mb-4">Company</h3>
                         <ul className="space-y-3">
-                            <li><a className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" href="#">About Us</a></li>
-                            <li><a className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" href="#">Careers</a></li>
-                            <li><a className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" href="#">Contact</a></li>
-                            <li><a className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" href="#">Legal</a></li>
+                            <li><Link className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" to="/company">About Us</Link></li>
+                            <li><Link className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" to="/company">Careers</Link></li>
+                            <li><Link className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" to="/company">Contact</Link></li>
+                            <li><Link className="text-sm text-neutral-grey dark:text-subtext-dark hover:text-primary dark:hover:text-white transition" to="/company">Legal</Link></li>
                         </ul>
                     </div>
                 </div>
