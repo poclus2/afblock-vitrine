@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
     return (
         <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-background-light dark:bg-background-dark">
@@ -18,9 +20,9 @@ export default function Hero() {
                         Open account
                         <span className="material-symbols-outlined text-sm">arrow_forward</span>
                     </a>
-                    <button className="bg-white dark:bg-surface-dark text-primary dark:text-white border border-gray-200 dark:border-gray-700 px-8 py-3.5 rounded-xl font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
+                    <Link to="/demo" className="bg-white dark:bg-surface-dark text-primary dark:text-white border border-gray-200 dark:border-gray-700 px-8 py-3.5 rounded-xl font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
                         Book a demo
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

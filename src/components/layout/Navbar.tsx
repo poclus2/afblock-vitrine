@@ -42,12 +42,6 @@ export default function Navbar() {
 
                 {/* Desktop Buttons */}
                 <div className="hidden gap-3 md:flex">
-                    <Link
-                        to="/demo"
-                        className="flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-5 text-sm font-semibold text-neutral-dark transition hover:bg-gray-50 dark:bg-surface-dark dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"
-                    >
-                        Book a Demo
-                    </Link>
                     <a
                         href="https://afblock-business.dartsia.app/login"
                         className="flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-5 text-sm font-semibold text-neutral-dark transition hover:bg-gray-50 dark:bg-surface-dark dark:border-gray-700 dark:text-white dark:hover:bg-gray-800"
@@ -93,13 +87,6 @@ export default function Navbar() {
                             </NavLink>
                         ))}
                         <div className="mt-4 flex flex-col gap-2 pb-2">
-                            <Link
-                                to="/demo"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="flex h-10 w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-5 text-sm font-semibold text-neutral-dark transition hover:bg-gray-50 dark:bg-surface-dark dark:border-gray-700 dark:text-white"
-                            >
-                                Book a Demo
-                            </Link>
                             <a
                                 href="https://afblock-business.dartsia.app/login"
                                 onClick={() => setIsMobileMenuOpen(false)}
