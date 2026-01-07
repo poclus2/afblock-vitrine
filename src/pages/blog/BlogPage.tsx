@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Seo from '../../components/Seo';
 import Hero from './components/Hero';
 import FeaturedPost from './components/FeaturedPost';
 import BlogGrid from './components/BlogGrid';
@@ -37,6 +38,7 @@ export default function BlogPage() {
 
     return (
         <>
+            <Seo title="Latest Insights & News" description="Stay updated with the latest news, product updates, and industry insights from Afblock." />
             <Hero />
             {featuredPost && <FeaturedPost post={featuredPost} />}
             {/* Only show Grid if we have more posts, or if we have NO posts (to show empty state) */}

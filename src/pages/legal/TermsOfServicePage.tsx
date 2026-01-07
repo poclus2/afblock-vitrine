@@ -1,8 +1,10 @@
 import React from 'react';
+import Seo from '../../components/Seo';
 
 const TermsOfServicePage: React.FC = () => {
     return (
         <div className="py-24 px-4 sm:px-6 lg:px-8">
+            <Seo title="Terms of Service" description="Read our Terms of Service to understand the rules and regulations governing the use of Afblock's services." />
             <div className="max-w-4xl mx-auto">
                 <div className="bg-white px-8 py-12 shadow-sm border border-slate-100 dark:border-gray-800 rounded-2xl dark:bg-surface-dark dark:text-gray-100 font-inter text-[14px] leading-[1.6] text-neutral-dark">
                     {/* Header */}

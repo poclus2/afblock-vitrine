@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://home.afblock.dartsia.app/sitemap.xml

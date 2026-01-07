@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Seo from '../../components/Seo';
 import { blogApi, type BlogPost } from '../../services/api';
 
 export default function BlogPostPage() {
@@ -48,6 +49,12 @@ export default function BlogPostPage() {
 
     return (
         <article className="py-20 bg-white dark:bg-background-dark min-h-screen">
+            <Seo
+                title={post.title}
+                description={post.excerpt}
+                image={post.image}
+                type="article"
+            />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Link to="/blog" className="inline-flex items-center text-sm text-neutral-grey hover:text-primary dark:text-gray-400 dark:hover:text-white mb-8 transition-colors">
                     <span className="material-symbols-outlined text-sm mr-2">arrow_back</span>
