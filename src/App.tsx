@@ -9,6 +9,8 @@ import BlogPage from './pages/blog/BlogPage';
 import BlogPostPage from './pages/blog/BlogPostPage';
 import CompanyPage from './pages/company/CompanyPage';
 import DemoPage from './pages/demo/DemoPage';
+import PrivacyPolicyPage from './pages/legal/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/legal/TermsOfServicePage';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="blog/:slug" element={<BlogPostPage />} />
         <Route path="company" element={<CompanyPage />} />
         <Route path="demo" element={<DemoPage />} />
+        <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="terms-of-service" element={<TermsOfServicePage />} />
         <Route path="*" element={<div className="p-10 text-center">404 Not Found</div>} />
       </Route>
     </Routes>
