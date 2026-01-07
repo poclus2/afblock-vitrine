@@ -1,3 +1,5 @@
+import heroImage from '../../../assets/use-cases-hero.jpg';
+
 export default function Hero() {
     return (
         <section className="relative bg-background-off py-20 lg:py-28 dark:bg-background-dark overflow-hidden">
@@ -19,7 +21,7 @@ export default function Hero() {
                     <div className="flex-1 relative w-full max-w-xl lg:max-w-none">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
                             <img
-                                src="/use-cases-hero.png"
+                                src={heroImage}
                                 alt="Abstract visualization of financial flows"
                                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                             />
