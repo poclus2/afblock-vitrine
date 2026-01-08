@@ -38,11 +38,8 @@ export default function CorePricing() {
                         </div>
                     </div>
 
-                    {/* Card 2: Transfers - Popular */}
-                    <div className="group relative bg-background-light dark:bg-background-dark rounded-2xl p-8 border-2 border-primary/10 dark:border-primary/50 shadow-lg hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 transform md:scale-105 z-10">
-                        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-accent text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm">
-                            Most Popular
-                        </div>
+                    {/* Card 2: Transfers */}
+                    <div className="group relative bg-background-light dark:bg-background-dark rounded-2xl p-8 border border-gray-100 dark:border-gray-700 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
                         <div className="h-12 w-12 bg-blue-50 dark:bg-primary/20 rounded-xl flex items-center justify-center mb-6 text-primary dark:text-accent">
                             <span className="material-symbols-outlined text-2xl">swap_horiz</span>
                         </div>
