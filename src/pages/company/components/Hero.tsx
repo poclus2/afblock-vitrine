@@ -1,3 +1,5 @@
+import companyHero from '../../../assets/company-hero.jpg';
+
 export default function Hero() {
     return (
         <section className="relative py-20 lg:py-32 overflow-hidden bg-background-light dark:bg-background-dark">
@@ -24,7 +26,7 @@ export default function Hero() {
                     <div className="flex-1 w-full max-w-xl lg:max-w-none relative">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
                             <img
-                                src="/company-hero.png"
+                                src={companyHero}
                                 alt="Afblock global infrastructure"
                                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                             />
