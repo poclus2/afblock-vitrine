@@ -8,18 +8,18 @@ export default function CTA() {
                     Ready to explore stablecoin infrastructure for your business?
                 </h2>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Link
-                        to="/demo"
-                        className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                    >
-                        Book a demo
-                    </Link>
                     <a
                         href="https://afblock-business.dartsia.app/signup"
-                        className="w-full sm:w-auto border-2 border-primary dark:border-blue-400 text-primary dark:text-blue-300 px-8 py-4 rounded-xl font-semibold text-center hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
+                        className="w-full sm:w-auto bg-primary text-white border-2 border-primary px-8 py-4 rounded-xl font-semibold text-center hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                     >
                         Open account
                     </a>
+                    <Link
+                        to="/demo"
+                        className="w-full sm:w-auto bg-white text-primary border-2 border-gray-200 dark:border-gray-700 px-8 py-4 rounded-xl font-semibold text-center hover:bg-gray-50 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 transition-all shadow-sm"
+                    >
+                        Book a demo
+                    </Link>
                 </div>
             </div>
         </section>
