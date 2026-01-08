@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import heroImage from '../../../assets/home-hero.jpg';
 
 export default function Hero() {
     return (
@@ -41,9 +42,9 @@ export default function Hero() {
                     <div className="relative lg:h-[600px] flex items-center justify-center">
                         <div className="relative w-full max-w-xl rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
                             <img
-                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
-                                alt="Platform Dashboard"
-                                className="w-full h-auto object-cover"
+                                src={heroImage}
+                                alt="Afblock Platform"
+                                className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                             />
                         </div>
                     </div>
