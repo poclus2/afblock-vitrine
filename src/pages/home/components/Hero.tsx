@@ -15,13 +15,13 @@ export default function Hero() {
                     {/* Left Column: Text */}
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] mb-8 tracking-tight">
-                            Redefining global finance for businesses in the{' '}
+                            Connecting businesses to the global economy through{' '}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-white">
-                                digital era
+                                stablecoins
                             </span>
                         </h1>
                         <p className="text-lg lg:text-xl text-blue-100/80 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                            Unlock the potential of modern neo-banking: streamlined, secure, and tailored for a digital-first world. Seamlessly collect fiat, convert to stablecoins, and manage payouts.
+                            Seamlessly collect fiat, convert to stablecoins, manage treasury flows, and execute off-ramp payouts with built-in compliance and auditability.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
                             <a
