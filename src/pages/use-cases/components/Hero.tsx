@@ -1,4 +1,4 @@
-import heroImage from '../../../assets/use-cases-hero.jpg';
+
 
 export default function Hero() {
     return (
@@ -17,17 +17,50 @@ export default function Hero() {
                             Afblock transforms complex treasury operations into simple, automated flows. From cross-border payroll to merchant settlement, deploy infrastructure that scales with your capital.
                         </p>
                     </div>
-                    {/* Hero Image */}
-                    <div className="flex-1 relative w-full max-w-xl lg:max-w-none">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
-                            <img
-                                src={heroImage}
-                                alt="Abstract visualization of financial flows"
-                                className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-                            />
+                    {/* Hero Visual - Floating Elements */}
+                    <div className="flex-1 relative w-full max-w-xl lg:max-w-none flex items-center justify-center lg:h-[600px]">
+                        <div className="relative w-full max-w-lg aspect-square">
+                            {/* Background Glow */}
+                            <div className="absolute inset-0 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+
+                            {/* Floating Element 1 - Incoming Fiat */}
+                            <div className="absolute top-10 left-0 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-soft dark:shadow-none dark:border dark:border-slate-700 w-64 z-20 transform -rotate-6 animate-[float_4s_ease-in-out_infinite]">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                                        <span className="material-icons">attach_money</span>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-gray-500 dark:text-gray-400">Incoming Fiat</p>
+                                        <p className="font-bold text-slate-900 dark:text-white">$145,200.00</p>
+                                    </div>
+                                </div>
+                                <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-green-500 w-3/4"></div>
+                                </div>
+                            </div>
+
+                            {/* Central Hub */}
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary dark:bg-blue-900 rounded-3xl flex items-center justify-center shadow-2xl z-10 border-4 border-white dark:border-slate-800">
+                                <span className="material-icons text-white text-6xl">hub</span>
+                            </div>
+
+                            {/* Floating Element 2 - Stablecoin Payout */}
+                            <div className="absolute bottom-10 right-0 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-soft dark:shadow-none dark:border dark:border-slate-700 w-64 z-20 transform rotate-3 animate-[float_5s_ease-in-out_infinite_1s]">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary">
+                                        <span className="material-icons">token</span>
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-gray-500 dark:text-gray-400">Stablecoin Payout</p>
+                                        <p className="font-bold text-slate-900 dark:text-white">145,000 USDC/USDT</p>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between items-center text-xs text-gray-400">
+                                    <span>Processing</span>
+                                    <span className="text-accent font-medium">Instant</span>
+                                </div>
+                            </div>
                         </div>
-                        {/* Decorative blob behind image */}
-                        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-500/20 blur-3xl rounded-full"></div>
                     </div>
                 </div>
             </div>
