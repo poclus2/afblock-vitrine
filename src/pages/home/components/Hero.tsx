@@ -33,7 +33,7 @@ export default function Hero() {
                             </a>
                             <Link
                                 to="/demo"
-                                className="w-full sm:w-auto text-white font-semibold text-center hover:text-blue-300 transition-all flex items-center justify-center gap-2 group"
+                                className="w-full sm:w-auto bg-white text-[#0f172a] px-8 py-4 rounded-xl font-semibold text-center hover:bg-gray-100 transition-all flex items-center justify-center gap-2 group shadow-lg"
                             >
                                 Book a demo
                                 <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
