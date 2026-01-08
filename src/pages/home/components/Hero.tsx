@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <section className="relative overflow-hidden bg-background-light dark:bg-background-dark py-8 px-4 sm:px-6 lg:px-8">
             {/* Dark Card Container */}
-            <div className="max-w-7xl mx-auto relative z-10 bg-[#0f172a] rounded-[2.5rem] p-8 md:p-12 lg:p-20 overflow-hidden shadow-2xl">
+            <div className="max-w-7xl mx-auto relative z-10 bg-[#162032] rounded-[2.5rem] p-8 md:p-12 lg:p-20 overflow-hidden shadow-2xl">
 
                 {/* Background Decoration */}
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
