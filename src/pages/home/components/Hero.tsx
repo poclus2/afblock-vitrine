@@ -29,7 +29,6 @@ export default function Hero() {
                                 className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-blue-500 transition-all shadow-lg hover:shadow-blue-600/25 transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
                             >
                                 Open account
-                                <span className="material-icons text-sm">arrow_forward</span>
                             </a>
                             <Link
                                 to="/demo"
